@@ -55,7 +55,7 @@ export class Main extends React.Component {
           <Container id="drum-machine">
             <Row className="title">
               <Col>
-                <h1>Drum Machine</h1>
+                <h1>Sampler Machine</h1>
               </Col>
             </Row>
             <Row>
