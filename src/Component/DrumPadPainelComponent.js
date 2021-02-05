@@ -1,14 +1,14 @@
 import React from "react";
-import { Col, Container, Button } from "reactstrap";
-import firstSet from "./audioSets";
+import { Col, Container } from "reactstrap";
+import firstSet from "../audioSets";
 
 export const DrumPadPainel = (props) => {
   let audios = firstSet.map((audio, i) => {
     return (
       <Col key={i}>
-        <Button
+        <button
           id={audio.keyCode}
-          className="drum-pad"
+          className="btn drum-pad"
           name={audio.id}
           onClick={(id) => props.handleClick(id)}
         >
@@ -16,7 +16,7 @@ export const DrumPadPainel = (props) => {
             <source type="audio/mp3" />
           </audio>
           {audio.key}
-        </Button>
+        </button>
       </Col>
     );
   });

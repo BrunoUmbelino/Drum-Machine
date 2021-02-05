@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Container, Row, Label } from "reactstrap";
 import DrumPadPainel from "./DrumPadPainelComponent";
-import firstSet from "./audioSets";
-import "./App.css";
+import firstSet from "../audioSets";
+import "../App.css";
 
 export class Main extends React.Component {
   constructor(props) {
@@ -13,10 +13,16 @@ export class Main extends React.Component {
     this.play = this.play.bind(this);
   }
 
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyPress);
+  }
+
   play(audio, description) {
     audio.currentTime = 0;
+    if (audio.id === "Z" || audio.id === "X" || audio.id === "C") {
+      audio.volume = 0.6;
+    }
     audio.play();
-    console.log(this.state.playing);
     this.setState({ display: description });
   }
 
@@ -24,10 +30,6 @@ export class Main extends React.Component {
     let audio = ev.target.children[0];
     let description = ev.target.name;
     this.play(audio, description);
-  }
-
-  componentDidMount() {
-    document.addEventListener("keydown", this.handleKeyPress);
   }
 
   handleKeyPress(ev) {
@@ -41,10 +43,10 @@ export class Main extends React.Component {
       let description = document.getElementById(key).name;
       this.play(audio, description);
 
-      document.getElementById(key).classList.add('active');
+      document.getElementById(key).classList.add("focus");
       setTimeout(() => {
-        document.getElementById(key).classList.remove('active');
-      }, 500);
+        document.getElementById(key).classList.remove("focus");
+      }, 300);
     }
   }
 
@@ -52,25 +54,28 @@ export class Main extends React.Component {
     return (
       <div className="main">
         <div className="content-wrapper">
-          <Container id="drum-machine">
-            <Row className="title">
-              <Col>
-                <h1>Sampler Machine</h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col sm={6} className="drum-pad-painel">
-                <DrumPadPainel
-                  handleClick={this.handleClick}
-                  handleKeyPress={this.handleKeyPress}
-                />
-              </Col>
-              <Col sm={6} className="drum-pad-dysplay">
-                <div id="display">
-                  <Label>{this.state.display}</Label>
-                </div>
-              </Col>
-            </Row>
+          <Container>
+            <div id="drum-machine">
+              <Row className="title">
+                <Col>
+                  <h1>Sampler Machine</h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={6} className="drum-pad-painel">
+                  <DrumPadPainel
+                    handleClick={this.handleClick}
+                    handleKeyPress={this.handleKeyPress}
+                  />
+                </Col>
+                <Col md={6} className="drum-pad-dysplay">
+                  <div id="display">
+                    <Label>{this.state.display}</Label>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <div className="by">By Bruno Umbelino</div>
           </Container>
         </div>
       </div>

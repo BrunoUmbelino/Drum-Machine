@@ -1,37 +1,37 @@
 export const firstSet = [
     {
-        id : 'Trap Brass 1',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610578928/samples/audio2/Samplar_-_Trap_Brass_1_mi2sot.wav',
+        id : 'Epiano1-2c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461694/samples/epiano/epiano1-2c_phfvra.wav',
         keyCode : '81',
         key : 'Q'
     },
     {
-        id :'Trap Brass 2',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610578923/samples/audio2/Samplar_-_Trap_Brass_2_acxs44.wav',
+        id :'Epiano1-3c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461694/samples/epiano/epiano1-3c_hqkwpo.wav',
         keyCode : '87',
         key : 'W'
     },
     {
-        id : 'Trap Brass 3',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610578923/samples/audio2/Samplar_-_Trap_Brass_3_h194xu.wav',
+        id : 'Epiano1-4c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461695/samples/epiano/epiano1-4c_gpmwx8.wav',
         keyCode : '69',
         key : 'E'
     },
     {
-        id : 'Trap Brass 4',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610582550/samples/audio2/Samplar_-_Trap_Brass_4_g5cqek.wav',
+        id : 'Epiano1-5c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461695/samples/epiano/epiano1-5c_tpdkh6.wav',
         keyCode : '65',
         key : 'A'
     },
     {
-        id : 'Trap Brass 5',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610582550/samples/audio2/Samplar_-_Trap_Brass_5_b03yzz.wav',
+        id : 'Epiano1-6c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461695/samples/epiano/epiano1-6c_anpqsh.wav',
         keyCode : '83',
         key : 'S'
     },
     {
-        id : 'Trap Brass 6',
-        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1610582550/samples/audio2/Samplar_-_Trap_Brass_6_baiypx.wav',
+        id : 'Epiano1-7c',
+        url : 'https://res.cloudinary.com/djiuzmp1e/video/upload/v1612461695/samples/epiano/epiano1-7c_yepasf.wav',
         keyCode : '68',
         key : 'D'
     },
