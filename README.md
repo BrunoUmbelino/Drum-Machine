@@ -2,11 +2,11 @@
 
 Link: https://brunoumbelino.github.io/Sampler-Machine/
 
-## Description
+### Description
 
-Sampler Machine is a responsive application that can play nine different sounds that are stored in the cloud. The project was developed as a solution to the **‘Drum Machine’** challenge proposed by the [FreeCodeCamp](https://www.freecodecamp.org/) community in Front End Development Libraries certification, in the upper left part of the screen it is possible to use the test suite proposed by challenge.
+**Sampler Machine** is a responsive application that can play nine different sounds that are stored in the cloud. The project was developed as a solution to the **‘Drum Machine’** challenge proposed by the [FreeCodeCamp](https://www.freecodecamp.org/) community in Front End Development Libraries certification, in the upper left part of the screen it is possible to use the test suite proposed by challenge.
 
-## Technologies
+### Technologies
 
 - React
 - Bootstrap (Reactstrap)
@@ -14,7 +14,7 @@ Sampler Machine is a responsive application that can play nine different sounds 
 - HTML 5
 - CSS 3
 
-## Tests proposed by the challenge
+### Tests proposed by the challenge
     1. I should be able to see an outer container with a corresponding id="drum-machine" that contains all other elements
     2. Within #drum-machine I can see an element with corresponding id="display".
     3. Within #drum-machine I can see 9 clickable "drum pad" elements, each with a class name of "drum-pad", a unique id that describes the audio clip the drum pad will be set up to trigger, and an inner text that corresponds to one of the following keys on the keyboard: Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order.
