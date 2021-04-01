@@ -33,12 +33,12 @@ export class Main extends React.Component {
   }
 
   handleKeyPress(ev) {
-    var key = ev.keyCode;
+    var key = ev.keyCode.toString();
     var keyCodes = firstSet.map((audio) => {
       return audio.keyCode;
     });
 
-    if (keyCodes.find((el) => el == key)) {
+    if (keyCodes.find((el) => el === key)) {
       let audio = document.getElementById(key).children[0];
       let description = document.getElementById(key).name;
       this.play(audio, description);
