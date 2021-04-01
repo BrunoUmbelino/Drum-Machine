@@ -1,4 +1,4 @@
-# Sampler-Machine
+# Sampler Machine
 
 Link: https://brunoumbelino.github.io/Sampler-Machine/
 
